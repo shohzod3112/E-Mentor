@@ -1,0 +1,28 @@
+@import "./_variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    color: $maincolor;
+}
+
+body {
+    width: 100%;
+    background-color: $bgcolor;
+}
+
+a {
+    text-decoration: none;
+    color: $maincolor;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    width: 80vw;
+    margin: 0 auto;
+}

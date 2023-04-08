@@ -1,0 +1,1023 @@
+@import "./_default";
+@import "./_variables";
+
+#header {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: 2rem 0;
+    font-size: 1rem;
+    .logo {
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        a {
+            padding: 1rem 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+            img {
+                padding-right: 0.4rem;
+            }
+        }
+    }
+    label {
+        display: none;
+    }
+    #check {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        .active {
+            border-bottom: 1px dashed $primarycolor;
+        }
+    }    
+}
+
+.main {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex; gap: 1.3rem;
+}
+
+h1 {
+    width: 90%;
+    font-size: 3.3rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    line-height: 5rem;
+}
+
+.pic {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.text {
+    width: 80%;
+    // background-color: red;
+    h5{
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+    p{
+        width: 92%;
+        font-size: 0.98rem;
+        color: $maincolor;
+        margin: 1rem 0;
+    }
+}
+
+.cards {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+    .card {
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            color: $secondprimarycolor;
+        }
+        p{
+            font-size: 0.9rem;
+            line-height: 120%;
+        }
+    }
+}
+
+.big1 {
+    width: 100%;
+    background-color: $secondprimarycolor;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.reklama {
+    // background-color: $secondprimarycolor;
+    width: 100%;
+    padding: 1rem 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;
+    .aktual {
+        // width: 50%;
+        h1{
+            font-size: 2rem;
+            color: #FDFDFD;
+            padding: 1rem 0;
+        }
+        p{
+            color: #FDFDFD;
+            font-size: 0.9rem;
+        }
+        a{
+            display: inline-block;
+            background-color: $primarycolor;
+            padding: 0.7rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 1rem 0 1rem;
+        }
+    }
+    .kurs {
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.question {
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    .kartalar {
+        text-align: left;
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+    }
+    a{
+        display: inline-block;
+        background-color: $secondprimarycolor;
+        padding: 0.7rem 2rem;
+        margin: 4rem 0;
+        border-radius: 0 1rem 0 1rem;
+        cursor: pointer;
+    }
+}
+
+.karta {
+    background-color: #FDFDFD;
+    padding: 1.3rem 0.6rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+    .tepa {
+        display: flex; gap: 0.5rem;
+        h2 {
+            font-size: 0.9rem;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        color: $maincolor;
+        padding-top: 0.5rem;
+    }
+}
+
+.big2{
+    width: 100%;
+    margin-top: 3rem;
+    background-image: url('../media/skidka.svg');
+    background-size: cover;
+    display: flex; 
+    padding: 5rem 0;
+    .chap{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+        h1{
+            width: 50%;
+            line-height: 120%;
+            font-size: 3rem;
+            // padding: 4rem 0 2rem 0;
+        }
+        p{
+            width: 70%;
+        }
+        a{
+            display: inline-block;
+            background-color: $primarycolor;
+            padding: 0.7rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 1rem 0 1rem;
+        }
+    }
+}
+
+.faq {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex; flex-direction: column; gap: 2rem;
+    h1 {
+        font-size: 3rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+}
+
+.minus {
+    display: flex; flex-direction: column; row-gap: 0.8rem;
+    background-color: $faqbgcolor;
+    padding: 2rem 1rem 2rem 3rem;
+    box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+    border-radius: 10px;
+    .plus{
+        display: flex; justify-content: space-between;
+        h5{
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+    p{
+        width: 85%;
+    }
+}
+
+.footer{
+    padding: 3rem 0;
+    display: flex; gap: 7%;
+    .foocard1{
+        display: flex; flex-direction: column; gap: 2rem;
+        width: 35%;
+        .logo{
+            font-weight: 600;
+            font-size: 1.5rem;
+            img{
+                padding-right: 0.5rem;
+            }
+        }
+        .sm{
+            display: flex; gap: 1rem;
+            color: $maincolor;
+        }
+    }
+    .foocards{
+        width: 100%;
+        display: flex; justify-content: space-between; gap: 2%;
+
+    .foocard{
+        display: flex; flex-direction: column; gap: 1rem;
+        h5{
+            font-weight: 500;
+            font-size: 1rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            font-size: 0.9rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    }
+}
+
+.foopass{
+    padding: 2rem 0;
+    display: flex; justify-content: space-between; gap: 2rem;
+    .birinchi{
+        flex-basis: 30rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1325px) {
+    h1{
+        width: 95%;
+    }
+}
+
+@media (max-width: 1250px) {
+    h1{
+        width: 95%;
+        font-size: 3.1rem;
+        line-height: 4rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    h1{
+        font-size: 2.9rem;
+    }
+}
+
+@media (max-width: 1100px){
+    h1{
+        font-size: 2.6rem;
+    }
+
+    .big2{
+        .right{
+            width: 45%;
+            h1{
+                width: 60%;
+            }
+            p{
+                width: 80%;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+
+    .faq {
+        h1{
+            font-size: 2.6rem;
+            padding-top: 1rem;
+            padding-bottom: 0;
+        }
+    }
+
+    .minus {
+        padding: 2rem 1rem 2rem 3rem;
+        .plus{
+            gap: 2rem;
+            h5{
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            width: 90%;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .foopass{
+        padding: 1.8rem 0;
+        gap: 1.8rem;
+        .birinchi{
+            flex-basis: 28rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #header {
+        ul {
+            gap: 1.5rem;
+        }
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .reklama {
+        // gap: 4rem;
+        .aktual {
+            h1{
+                font-size: 1.9rem;
+                padding: 0.9rem 0;
+            }
+        }
+    }
+
+    .big2{
+        .right{
+            width: 40%;
+            h1{
+                width: 70%;
+                font-size: 2.7rem;
+            }
+            p{
+                width: 80%;
+            }
+        }
+        .chap {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 950px){
+    h1{
+        font-size: 2.3rem;
+    }
+
+    .faq {
+        h1{
+            font-size: 2.4rem;
+        }
+    }
+
+    .footer {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 920px) {
+    #header {
+        padding: 1.8rem 0;
+        ul {
+            gap: 1.3rem;
+        }
+    }
+
+    .main {
+        font-size: 0.8rem;
+        gap: 1rem;
+    }
+
+    h1{
+        font-size: 2.1rem;
+        line-height: 3rem;
+    }
+
+    .big2{
+        .right{
+            width: 40%;
+            h1{
+                width: 70%;
+                font-size: 2.4rem;
+            }
+            p{
+                width: 80%;
+                font-size: 0.8rem;
+            }
+            a{
+                padding: 0.6rem 1.8rem;
+                margin: 1.8rem 0;
+            }
+        }
+        .chap {
+            width: 60%;
+        }
+    }
+
+    .footer {
+        gap: 3rem;
+        .foocard1{
+            gap: 1.8rem;
+            width: 32%;
+            .logo{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.8rem;
+
+            }
+            .sm{
+                gap: 0.8rem;
+            }
+        }
+        .foocards{
+            gap: 1.7rem;
+    
+        .foocard{
+            display: flex; flex-direction: column; gap: 1rem;
+            h5{
+                font-size: 0.9rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+
+    #header {
+        padding: 1.2rem 0;
+        font-size: 0.9rem;
+        ul {
+            gap: 1.5rem;
+        }
+    }
+
+    h1{
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding: 1.5rem 0;
+    }
+
+    .big2{
+        background-position: -2rem, 0;
+        .right{
+            width: 45%;
+            h1{
+                width: 60%;
+            }
+            p{
+                width: 80%;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+
+    .faq {
+        h1{
+            font-size: 2rem;
+        }
+
+        .minus{
+            .plus{
+                h5{
+                    font-size: 1rem;
+                }
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    #header {
+        padding: 1rem 0;
+        ul {
+            gap: 1rem;
+        }
+    }
+
+    h1{
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+        padding: 1.4rem 0;
+    }
+
+    .big2{
+        background-position: -4rem, 0;
+        .right{
+            width: 45%;
+            h1{
+                width: 70%;
+            }
+            p{
+                width: 80%;
+            }
+            a{
+                font-size: 0.8rem;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+
+    .footer{
+        padding: 2rem 0;
+        gap: 1rem;
+        .foocard1{
+            gap: 0.9rem;
+            .logo{
+                font-size: 1.1rem;
+                img{
+                    padding-right: 0.3rem;
+                }
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            .sm{
+                gap: 1rem;
+            }
+        }
+        .foocards{
+            gap: 0.8rem;
+        }
+        .foocard{
+            gap: 0.5rem;
+            h5{
+                font-size: 0.8rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    #header {
+        padding: 0.9rem 0;
+        font-size: 0.8rem;
+        ul {
+            gap: 1rem;
+        }
+    }
+
+    .main {
+        font-size: 0.7rem;
+        gap: 0.7rem;
+    }
+
+    h1{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        padding: 1.3rem 0;
+    }
+
+    .reklama {
+        .aktual {
+            h1{
+                font-size: 1.7rem;
+                padding: 0.9rem 0;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            a{
+                padding: 0.5rem 1.8rem;
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    .question {
+        .kartalar{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column; align-items: center;
+        gap: 3rem;
+        .foocard1{
+            width: 70%;
+            align-items: center;
+            .logo{
+                font-size: 1.6rem;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+        }
+        .foocards {
+            flex-direction: column; align-items: center; gap: 2rem;
+            .foocard{
+                align-items: center;
+                h5{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #header {
+        padding: 0.8rem 0;
+        font-size: 0.7rem;
+        ul {
+            gap: 1rem;
+        }
+    }
+
+    .main {
+        font-size: 0.6rem;
+        gap: 0.6rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        padding: 1.2rem 0;
+    }
+
+    .text {
+        width: 90%;
+    }
+    .big2{
+        background-position: -7rem, 0;
+        .right{
+            width: 40%;
+            h1{
+                width: 90%;
+            }
+        }
+        .chap {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #header {
+        // position: relative;
+        label {
+            display: block;
+        }
+        ul {
+            background-color: aqua;
+            position: fixed;
+            font-size: 1.1rem;
+            flex-direction: column; align-items: center; justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            right: -100vw;
+            // bottom: 0;
+            transition: 0.7s ease;
+        }
+        #check:checked ~ ul{
+            right: 0;
+        }
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reklama {
+        grid-template-columns: 1fr;
+        .aktual {
+            h1{
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            a{
+                padding: 0.7rem 2rem;
+                margin: 2rem 0;
+            }
+        }
+        .kurs {
+            img {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    .big2{
+        background-position: -7rem, 0;
+        padding: 3rem 0;
+        .right{
+            width: 45%;
+            h1{
+                width: 80%;
+                font-size: 2.1rem;
+            }
+            p{
+                width: 80%;
+                font-size: 0.7rem;
+            }
+            a{
+                padding: 0.5rem 1.6rem;
+                margin: 1.7rem 0;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+
+    .faq {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column; align-items: center;
+        gap: 3rem;
+        .foocard1{
+            width: 80%;
+        }
+    }
+
+    .foopass{
+        flex-direction: column; align-items: center;
+        padding-top: 1.8rem;
+        gap: 1rem;
+        .birinchi{
+            flex-basis: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .karta{
+        .tepa {
+            h2 {
+                font-size: 0.8rem;
+            }
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .karta{
+        .tepa {
+            h2 {
+                font-size: 0.7rem;
+            }
+        }
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+    .big2{
+        background-position: -8rem, 0;
+        .right{
+            width: 45%;
+            h1{
+                font-size: 1.9rem;
+                width: 90%;
+            }
+            p{
+                font-size: 0.6rem;
+            }
+            a{
+                padding: 0.4rem 1.4rem;
+                margin: 1.6rem 0;
+            }
+        }
+        .chap {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        padding: 1rem 0;
+    }
+    .question {
+        h1{
+            font-size: 1.7rem;
+            padding-bottom: 3rem;
+        }
+        .kartalar{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .karta{
+        .tepa {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .big2{
+        background-position: -9rem, 0;
+        padding: 4rem 0;
+        .right{
+            width: 45%;
+            h1{
+                width: 85%;
+                font-size: 1.6rem;
+            }
+            p{
+                width: 90%;
+                font-size: 0.6rem;
+            }
+            a{
+                font-size: 0.7rem;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .cards {
+        grid-template-columns: 1fr;
+        .card{
+            h1 {
+                font-size: 3rem;
+            }
+            p{
+                font-size: 0.9rem;
+                line-height: 120%;
+                padding: 1rem 0;
+            }
+        }
+    }
+    .reklama {
+        padding: 1rem 0;
+        grid-template-columns: 1fr; gap: 3rem;
+        .aktual {
+            h1{
+                font-size: 1.7rem;
+                line-height: 120%;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            a{
+                padding: 0.6rem 1.8rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .question {
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+    .big2{
+        background-position: -10rem, 0;
+        .right{
+            width: 45%;
+            h1{
+                // width: 90%;
+                font-size: 1.4rem;
+            }
+            p{
+                width: 100%;
+                font-size: 0.6rem;
+            }
+            a{
+                padding: 0.3rem 1.2rem;
+                margin: 1.5rem 0;
+                font-size: 0.7rem;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    h1{
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        padding: 0.9rem 0;
+    }
+}
+
+@media (max-width: 340px){
+    h1{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    .reklama {
+        padding: 1rem 0;
+        grid-template-columns: 1fr; gap: 3rem;
+        .aktual {
+            h1{
+                font-size: 1.5rem;
+                line-height: 120%;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .question {
+        h1{
+            font-size: 1.1rem;
+        }
+    }
+
+    .big2{
+        background-position: -10rem, 0;
+        .right{
+            width: 45%;
+            h1{
+                // width: 90%;
+                font-size: 1.2rem;
+            }
+            p{
+                width: 100%;
+                font-size: 0.6rem;
+            }
+            a{
+                padding: 0.3rem 1.2rem;
+                margin: 1.5rem 0;
+                font-size: 0.7rem;
+            }
+        }
+        .chap {
+            width: 55%;
+        }
+    }
+}
